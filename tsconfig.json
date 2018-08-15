@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "amd",
+    "rootDir": "src",
+    "outDir": "public",
+    "baseUrl": "./public/node_modules",
+    "paths": {
+      "jquery" : ["jquery/dist/jquery"],
+      "angular" : ["angular/angular"]
+    }
+  },
+  "files": [
+    "src/app.ts"
+  ]
+}
