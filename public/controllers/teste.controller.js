@@ -1,12 +1,11 @@
 define(["require", "exports"], function (require, exports) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
-    var TesteController = /** @class */ (function () {
-        function TesteController(scope) {
+    class TesteController {
+        constructor(scope) {
             scope.vm = this;
         }
-        TesteController.$inject = ['$scope'];
-        return TesteController;
-    }());
+    }
+    TesteController.$inject = ['$scope'];
     exports.default = TesteController;
 });

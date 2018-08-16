@@ -3,7 +3,8 @@ requirejs.config({
     paths: {
         'app': 'app',
         'jquery': 'node_modules/jquery/dist/jquery',
-        'angular': 'node_modules/angular/angular'
+        'angular': 'node_modules/angular/angular',
+        'angular-route': 'node_modules/angular-route/angular-route'
     },
     shim: {
         'angular': {
