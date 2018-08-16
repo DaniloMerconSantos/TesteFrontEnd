@@ -1,0 +1,35 @@
+<div class="row">
+    <div class="desktop-full mobile-full tablet-full">
+        <div class="ui small breadcrumb">
+            <a class="section" href="/#/">Home</a>
+            <i class="right chevron icon divider"></i>
+            <div class="active section">Usuários</div>
+        </div>
+    </div>
+</div>
+
+<div class="ui divider"></div>
+<div>
+    <a class="ui icon button" href="/#/usuario/form">
+        <i class="file outline icon"></i>
+        Novo
+    </a>
+</div>
+
+<div class="ui attached segment" ng-init="testeFront.carregarTabela()">
+    <div class="table-responsive">
+        <table ng-table="tableParams" show-filter="true" class="ui very basic compact table unstackable">
+            <tbody>
+            <tr ng-repeat="user in $data">
+                <td data-title="'Usuário'" filter="{ 'usuario': 'text'}">{{ ::user.name }}</td>
+                <td data-title="'E-mail'" filter="{ 'email': 'text'}">{{ ::user.email }}</td>
+                <td data-title="'Telefone'"  filter="{ 'diretoria': 'text'}">{{::user.phone}}</td>
+                <td data-title="'CPF'"  filter="{ 'diretoria': 'text'}">{{::user.cpf}}</td>
+                <td data-title="'Ação'" class="collapsing">
+                    <a class="ui button mini icon black" href="" ng-click="testeFront.deletarUsuario(user.id)"><i class="remove icon"></i></a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

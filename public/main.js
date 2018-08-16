@@ -1,6 +1,6 @@
 requirejs.config({
     baseUrl: './',
-    path: {
+    paths: {
         'app': 'app',
         'jquery': 'node_modules/jquery/dist/jquery',
         'angular': 'node_modules/angular/angular'
@@ -8,7 +8,7 @@ requirejs.config({
     shim: {
         'angular': {
             exports: 'angular'
-        }
+        },
     }
 });
 
@@ -16,4 +16,4 @@ requirejs(['app'], function () {
     angular.element(document).ready(function () {
         angular.bootstrap(document, ['myApp']);
     })
-});
+})
